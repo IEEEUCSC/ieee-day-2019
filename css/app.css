@@ -1,2 +1,382 @@
-*{box-sizing:border-box}body{margin:0;padding:0}header{height:100vh;width:100%}.hero-text{position:absolute;left:50%;top:50%;transform:translate(-50%, -50%);z-index:1}.hero-text .hero-main-text{margin-bottom:40px}.people-globe{position:absolute;left:50%;top:50%;transform:translate(-50%, -50%)}.man #man-3{position:absolute;bottom:60px;right:60px}.intro{height:100vh;width:100%;background-color:#035b98;color:#fff;font-family:'Luckiest Guy', cursive;position:relative}.intro .hashtag{position:absolute;width:200px;height:200px;right:10%;top:0}.intro .intro-title{text-align:center;text-transform:uppercase;padding:50px;font-size:5rem;letter-spacing:3px}.intro .intro-text{padding:20px;text-align:center;width:80%;margin:0 auto}.countdown{background-image:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url(/img/hero1.jpg);background-size:cover;background-attachment:fixed;height:80vh;font-family:'Luckiest Guy', cursive;color:#fff}.countdown .countdown-title{text-align:center;padding:50px;font-size:5rem}.countdown .countdown-items{width:80%;margin:0 auto;display:flex;align-items:center;justify-content:space-between;font-size:5rem}.countdown .countdown-items #days,.countdown .countdown-items #mins,.countdown .countdown-items #hours,.countdown .countdown-items #secs{padding:50px;background-color:#0098a6;border-radius:50px}
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  height: 100vh;
+  width: 100%;
+}
+
+header .side-btn {
+  padding: 20px;
+  position: fixed;
+  z-index: 10;
+}
+
+header #blob {
+  position: absolute;
+  z-index: -1;
+}
+
+header .hero-text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+header .hero-text .hero-main-text #day-title {
+  height: 200px;
+  width: 800px;
+  padding-bottom: 30px;
+}
+
+header .hero-text .hero-bottom-text {
+  text-align: center;
+}
+
+header .balloons {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+header .balloons img {
+  height: 300px;
+}
+
+header .man #man-1 {
+  position: absolute;
+  top: 50%;
+  left: 2%;
+}
+
+header .man #man-2 {
+  position: absolute;
+  top: 30%;
+  left: 8%;
+}
+
+header .man #man-3 {
+  position: absolute;
+  top: 20%;
+  right: 60px;
+}
+
+@media (max-width: 576px) {
+  header .hero-text #day-title {
+    width: 80vmin !important;
+    height: 50% !important;
+    padding-bottom: 5px !important;
+  }
+  header .hero-text #day-subtitle {
+    width: 80% !important;
+  }
+  header .man #man-1 {
+    width: 30% !important;
+    position: absolute;
+    top: initial;
+    bottom: 0 !important;
+    left: 2%;
+    height: 200px;
+  }
+  header .man #man-2 {
+    position: absolute;
+    width: 30% !important;
+    bottom: 20% !important;
+    left: 8%;
+    top: initial;
+  }
+  header .man #man-3 {
+    position: absolute;
+    width: 30% !important;
+    top: 10%;
+    right: 30px;
+  }
+  header .balloons {
+    bottom: 0;
+    right: 0;
+  }
+  header .balloons img {
+    height: 200px;
+  }
+}
+
+.intro {
+  height: 100minw;
+  width: 100%;
+  margin: auto auto;
+  background-color: #035b98;
+  color: #fff;
+  font-family: "Luckiest Guy", cursive;
+  position: relative;
+}
+
+.intro .hashtag {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  right: 10%;
+  top: 0;
+}
+
+.intro .intro-title {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 50px;
+  font-size: 5rem;
+  letter-spacing: 3px;
+}
+
+@media (max-width: 576px) {
+  .intro .intro-title {
+    font-size: 5rem;
+    padding-bottom: 10px;
+  }
+}
+
+.intro .intro-text {
+  padding: 20px;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 576px) {
+  .intro .intro-text {
+    font-size: 1rem;
+    width: 100%;
+  }
+}
+
+.imagebar-2 {
+  height: 50vh;
+  width: 80%;
+  margin: 0 auto;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(/img/img1.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/img/img1.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  margin-top: 50px;
+}
+
+.countdown {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(/img/img2.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/img/img2.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  height: 80vh;
+  font-family: "Luckiest Guy", cursive;
+  color: #fff;
+  z-index: 1000;
+  background-position: center;
+}
+
+@media (max-width: 576px) {
+  .countdown {
+    height: 100vh;
+  }
+}
+
+.countdown .countdown-title {
+  text-align: center;
+  padding: 50px;
+  font-size: 5rem;
+}
+
+@media (max-width: 576px) {
+  .countdown .countdown-title {
+    font-size: 4rem;
+    padding: 80px 0px 0px;
+  }
+}
+
+.countdown .countdown-items {
+  width: 80%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 5rem;
+}
+
+@media (max-width: 576px) {
+  .countdown .countdown-items {
+    font-size: 2.5rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.countdown .countdown-items #days,
+.countdown .countdown-items #mins,
+.countdown .countdown-items #hours,
+.countdown .countdown-items #secs {
+  padding: 25px;
+  margin: 10px;
+  background-color: #0098a6;
+  border-radius: 50px;
+}
+
+.banner-1 {
+  height: 100vh;
+  color: #981c81;
+  font-family: "Luckiest Guy", cursive;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.banner-1 .banner-1-title {
+  font-size: 5rem;
+  padding: 50px;
+  padding-top: 0px;
+}
+
+@media (max-width: 576px) {
+  .banner-1 .banner-1-title {
+    font-size: 3rem !important;
+    width: 100%;
+    padding: 50px 0px;
+  }
+}
+
+.banner-1 .banner-1-text {
+  font-size: 3rem;
+  width: 80%;
+  margin: 0 auto;
+}
+
+@media (max-width: 576px) {
+  .banner-1 .banner-1-text {
+    font-size: 1.5rem !important;
+  }
+}
+
+.about-day {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  padding: 20px;
+  font-family: "Luckiest Guy", cursive;
+}
+
+@media (max-width: 576px) {
+  .about-day {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.about-day .about-day-img {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(/img/img2.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/img/img2.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  width: 80%;
+  margin: 0 auto;
+  z-index: 2;
+}
+
+@media (max-width: 576px) {
+  .about-day .about-day-img {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 50vh;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(/img/img4.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/img/img4.jpg);
+  }
+}
+
+.about-day .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 50px;
+}
+
+.about-day .container .about-day-title {
+  font-size: 5rem;
+}
+
+@media (max-width: 576px) {
+  .about-day .container .about-day-title {
+    font-size: 3rem;
+  }
+}
+
+.about-day .container .about-day-text {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 576px) {
+  .about-day .container .about-day-text {
+    font-size: 1rem;
+  }
+}
+
+footer {
+  height: 50vh;
+  text-align: center;
+  margin: auto auto;
+  background-color: #0098a6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+  font-family: "Luckiest Guy", cursive;
+}
+
+footer .footer-main-title {
+  font-size: 5rem;
+}
+
+@media (max-width: 576px) {
+  footer .footer-main-title {
+    font-size: 3rem;
+  }
+}
 /*# sourceMappingURL=app.css.map */

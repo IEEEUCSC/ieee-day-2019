@@ -1,124 +1,354 @@
 @import "variables";
 
 * {
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
-	margin: 0;
-	padding: 0;
-	// background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    // background-color: #f2f2f2;
 }
 header {
-	height: 100vh;
-	width: 100%;
-}
+    height: 100vh;
+    width: 100%;
 
-.hero-text {
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%, -50%);
-	z-index: 1;
-	
-	.hero-main-text {
-		margin-bottom: 40px;
-	}
-}
+    .side-btn {
+        padding: 20px;
+        position: fixed;
+        z-index: 10;
+    }
 
-.people-globe {
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%, -50%);
-}
+    #blob {
+        position: absolute;
+        z-index: -1;
+        // width: 100%;
+    }
 
-.man {
-	#man-3 {
-		position: absolute;
-		bottom: 60px;
-		right: 60px;
-	}
+    .hero-text {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+
+        .hero-main-text {
+            // margin-bottom: 40px;
+
+            #day-title {
+                height: 200px;
+                width: 800px;
+                padding-bottom: 30px;
+            }
+        }
+
+        .hero-bottom-text {
+            text-align: center;
+        }
+    }
+
+    .balloons {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+
+        img {
+            height: 300px;
+        }
+    }
+
+    .man {
+        #man-1 {
+            position: absolute;
+            top: 50%;
+            left: 2%;
+        }
+        #man-2 {
+            position: absolute;
+            top: 30%;
+            left: 8%;
+        }
+        #man-3 {
+            position: absolute;
+            top: 20%;
+            right: 60px;
+        }
+    }
+    @media (max-width: $mobile) {
+        .hero-text {
+            #day-title {
+                width: 80vmin !important;
+                height: 50% !important;
+                padding-bottom: 5px !important;
+            }
+            #day-subtitle {
+                width: 80% !important;
+                // height: 80%;
+            }
+        }
+        .man {
+            #man-1 {
+                width: 30% !important;
+                position: absolute;
+                top: initial;
+                bottom: 0 !important;
+                left: 2%;
+                height: 200px;
+            }
+            #man-2 {
+                position: absolute;
+                width: 30% !important;
+                bottom: 20% !important;
+                left: 8%;
+                top: initial;
+            }
+            #man-3 {
+                position: absolute;
+                width: 30% !important;
+                top: 10%;
+                right: 30px;
+            }
+        }
+
+        .balloons {
+            bottom: 0;
+            right: 0;
+
+            img {
+                height: 200px;
+            }
+        }
+    }
 }
 
 .intro {
-	height: 100vh;
-	width: 100%;
-	background-color: #035b98;
-	color: #fff;
-	font-family: 'Luckiest Guy', cursive;
-	position: relative;
+    height: 100minw;
+    width: 100%;
+    margin: auto auto;
+    background-color: #035b98;
+    color: #fff;
+    font-family: "Luckiest Guy", cursive;
+    position: relative;
 
-	.hashtag {
-		position: absolute;
-		width: 200px;
-		height: 200px;
-		right: 10%;
-		top: 0;
-	}
+    .hashtag {
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        right: 10%;
+        top: 0;
+    }
 
-	.intro-title {
-		text-align: center;
-		text-transform: uppercase;
-		padding: 50px;
-		// font-family: 'Luckiest Guy', cursive;
-		// font-size: 4rem;
-		font-size: $title-size;
-		letter-spacing: 3px;
-	}
+    .intro-title {
+        text-align: center;
+        text-transform: uppercase;
+        padding: 50px;
+        // font-family: 'Luckiest Guy', cursive;
+        // font-size: 4rem;
+        font-size: $title-size;
+        letter-spacing: 3px;
 
-	.intro-text {
-		padding: 20px;
-		text-align: center;
-		width: 80%;
-		margin: 0 auto;
-	}
+        @media (max-width: $mobile) {
+            font-size: $title-mobile-size + 2;
+            padding-bottom: 10px;
+        }
+    }
+
+    .intro-text {
+        padding: 20px;
+        text-align: center;
+        width: 80%;
+        margin: 0 auto;
+        font-size: $para-size;
+
+        @media (max-width: $mobile) {
+            font-size: 1rem;
+            width: 100%;
+        }
+    }
 }
 
-// .imagebar-1 {
-// 	height: 50vh;
-// }
+.imagebar-2 {
+    height: 50vh;
+    width: 80%;
+    margin: 0 auto;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url(/img/img1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: 50px;
+}
 
 .countdown {
-	// background: url(/img/hero1.jpg);
-	background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/img/hero1.jpg);
-	background-size: cover;
-	background-attachment: fixed;
-	height: 80vh;
-	font-family: 'Luckiest Guy', cursive;
-	color: #fff;
+    // background: url(/img/hero1.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url(/img/img2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 80vh;
+    font-family: "Luckiest Guy", cursive;
+    color: #fff;
+    z-index: 1000;
+    background-position: center;
 
-	.countdown-title {
-		text-align: center;
-		padding: 50px;
-		font-size: $title-size;
-	}
+    @media (max-width: $mobile) {
+        height: 100vh;
+    }
 
-	.countdown-items {
-		// color: #fff;
-		width: 80%;
-		margin: 0 auto;
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		font-size: 5rem;
+    .countdown-title {
+        text-align: center;
+        padding: 50px;
+        font-size: $title-size;
 
-		#days, #mins, #hours, #secs {
-			// border: 1px solid #000;
-			padding: 50px;
-			background-color: rgb(0, 152, 166);
-			border-radius: 50px;
-		}
-	}
+        @media (max-width: $mobile) {
+            font-size: $title-mobile-size + 1;
+            padding: 80px 0px 0px;
+        }
+    }
 
+    .countdown-items {
+        // color: #fff;
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        // flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 5rem;
+
+        @media (max-width: $mobile) {
+            font-size: $para-mobile-size + 1;
+            flex-direction: column;
+        }
+
+        #days,
+        #mins,
+        #hours,
+        #secs {
+            // border: 1px solid #000;
+            padding: 25px;
+            margin: 10px;
+            background-color: rgb(0, 152, 166);
+            border-radius: 50px;
+        }
+    }
 }
 
+.banner-1 {
+    height: 100vh;
+    color: $purple;
+    font-family: $font;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
+    .banner-1-title {
+        font-size: $title-size;
+        padding: 50px;
+        padding-top: 0px;
+        // margin-top: 100px;
+        @media (max-width: $mobile) {
+            font-size: $title-mobile-size !important;
+            width: 100%;
+            padding: 50px 0px;
+            // padding-top: 100px;
+        }
+    }
 
+    .banner-1-text {
+        font-size: 3rem;
+        width: 80%;
+        margin: 0 auto;
 
+        @media (max-width: $mobile) {
+            font-size: $para-mobile-size !important;
+        }
+    }
+}
 
+.about-day {
+    display: flex;
+    position: relative;
+    padding: 20px;
+    // height: 100vh;
+    font-family: $font;
 
+    @media (max-width: $mobile) {
+        flex-direction: column;
+    }
 
+    .about-day-img {
+        background-image: linear-gradient(
+                rgba(0, 0, 0, 0.3),
+                rgba(0, 0, 0, 0.3)
+            ),
+            url(/img/img2.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        width: 80%;
+        margin: 0 auto;
+        z-index: 2;
+        @media (max-width: $mobile) {
+            flex-direction: column;
+            height: 50vh;
+            background-image: linear-gradient(
+                    rgba(0, 0, 0, 0.3),
+                    rgba(0, 0, 0, 0.3)
+                ),
+                url(/img/img4.jpg);
+        }
+    }
 
+    .container {
+        display: flex;
+        flex-direction: column;
+        padding: 50px;
+        // height: 100vmin;
 
+        .about-day-title {
+            font-size: $title-size;
+            @media (max-width: $mobile) {
+                font-size: $title-mobile-size;
+            }
+        }
 
+        .about-day-text {
+            font-size: $para-size;
+            @media (max-width: $mobile) {
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+footer {
+    height: 50vh;
+    text-align: center;
+    margin: auto auto;
+    background-color: $light-blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // color: $dark-blue;
+    color: #fff;
+    font-family: $font;
+
+    .footer-main-title {
+        font-size: $title-size;
+
+        @media (max-width: $mobile) {
+            font-size: $title-mobile-size;
+        }
+    }
+}
+
+// [data-scroll] {
+//     transition: opacity 1s;
+// }
+// [data-scroll="in"] {
+//     opacity: 1;
+// }
+// [data-scroll="out"] {
+//     opacity: 0;
+// }
