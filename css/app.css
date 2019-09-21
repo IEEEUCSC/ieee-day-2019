@@ -73,7 +73,7 @@ header .man #man-3 {
   right: 60px;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 1100px) {
   header .hero-text #day-title {
     width: 80vmin !important;
     height: 50% !important;
@@ -130,7 +130,7 @@ header .man #man-3 {
   letter-spacing: 3px;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 1100px) {
   .intro .intro-title {
     font-size: 3rem;
     padding-bottom: 10px;
@@ -146,7 +146,7 @@ header .man #man-3 {
   font-family: "Raleway", sans-serif;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 1100px) {
   .intro .intro-text {
     font-size: 1rem;
     width: 100%;
@@ -176,13 +176,19 @@ header .man #man-3 {
   background-position: center;
 }
 
+@media (max-width: 1100px) {
+  .countdown {
+    height: 100%;
+  }
+}
+
 .countdown .countdown-title {
   text-align: center;
   padding: 50px;
   font-size: 5rem;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 1100px) {
   .countdown .countdown-title {
     font-size: 4rem;
     padding: 80px 0px 0px;
@@ -206,7 +212,7 @@ header .man #man-3 {
   font-weight: bold;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 1100px) {
   .countdown .countdown-items {
     font-size: 2.5rem;
     -webkit-box-orient: vertical;
@@ -245,7 +251,7 @@ header .man #man-3 {
   position: relative;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 1100px) {
   .banner-1 {
     padding: 50px 0px;
     height: 100%;
@@ -260,7 +266,7 @@ header .man #man-3 {
   top: 0;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 1100px) {
   .banner-1 .hashtag {
     height: 100px;
     width: 100px;
@@ -275,7 +281,7 @@ header .man #man-3 {
   font-family: "Luckiest Guy", cursive;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 1100px) {
   .banner-1 .banner-1-title {
     font-size: 3rem !important;
     width: 100%;
@@ -290,7 +296,7 @@ header .man #man-3 {
   font-family: "Raleway", sans-serif;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 1100px) {
   .banner-1 .banner-1-text {
     font-size: 1.5rem !important;
   }
@@ -305,7 +311,7 @@ header .man #man-3 {
   font-family: "Luckiest Guy", cursive;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 1100px) {
   .about-day {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -325,7 +331,7 @@ header .man #man-3 {
   z-index: 2;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 1100px) {
   .about-day .about-day-img {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -352,7 +358,7 @@ header .man #man-3 {
   font-size: 5rem;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 1100px) {
   .about-day .container .about-day-title {
     font-size: 3rem;
   }
@@ -363,7 +369,7 @@ header .man #man-3 {
   font-family: "Raleway", sans-serif;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 1100px) {
   .about-day .container .about-day-text {
     font-size: 1rem;
   }
@@ -391,7 +397,7 @@ footer .footer-main-title {
   font-size: 5rem;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 1100px) {
   footer .footer-main-title {
     font-size: 3rem;
   }

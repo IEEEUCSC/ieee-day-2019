@@ -185,9 +185,9 @@ header {
     z-index: 1000;
     background-position: center;
 
-    // @media (max-width: $mobile) {
-    //     height: 100vh;
-    // }
+    @media (max-width: $mobile) {
+        height: 100%;
+    }
 
     .countdown-title {
         text-align: center;

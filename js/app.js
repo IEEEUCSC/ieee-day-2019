@@ -120,7 +120,7 @@ function setHeroAnimations() {
 }
 
 function setCountdown() {
-    var ieeeDay = new Date("Oct 1, 2019 00:00:00").getTime();
+    var ieeeDay = new Date("Oct 24, 2019 00:00:00").getTime();
     var daysEl = document.getElementById("days");
     var hoursEl = document.getElementById("hours");
     var minsEl = document.getElementById("mins");
@@ -164,9 +164,9 @@ function setScrollOut() {
                 jel.addClass("animated fadeInUp delay-500ms");
             }
             if (jel.hasClass("about-day-title")) {
-                jel.removeClass("animated fadeInRight delay-500ms");
+                jel.removeClass("animated fadeIn delay-500ms");
                 void el.offsetWidth;
-                jel.addClass("animated fadeInRight delay-500ms");
+                jel.addClass("animated fadeIn delay-500ms");
             }
             if (jel.hasClass("about-day-text")) {
                 jel.removeClass("animated fadeInLeft delay-500ms");
