@@ -127,7 +127,6 @@ header {
     margin: auto auto;
     background-color: #035b98;
     color: #fff;
-    font-family: "Luckiest Guy", cursive;
     position: relative;
 
     .intro-title {
@@ -136,6 +135,7 @@ header {
         padding: 50px;
         // font-family: 'Luckiest Guy', cursive;
         // font-size: 4rem;
+        font-family: $font;
         font-size: $title-size;
         letter-spacing: 3px;
 
@@ -151,6 +151,7 @@ header {
         width: 80%;
         margin: 0 auto;
         font-size: $para-size;
+        font-family: $font-para;
 
         @media (max-width: $mobile) {
             font-size: 1rem;
@@ -206,6 +207,8 @@ header {
         align-items: center;
         justify-content: space-between;
         font-size: 5rem;
+        font-family: $font-para;
+        font-weight: bold;
 
         @media (max-width: $mobile) {
             font-size: $para-mobile-size + 1;
@@ -228,7 +231,6 @@ header {
 .banner-1 {
     height: 100vh;
     // color: $purple;
-    font-family: $font;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -260,6 +262,7 @@ header {
         font-size: $title-size;
         padding: 50px;
         padding-top: 0px;
+        font-family: $font;
         // margin-top: 100px;
         @media (max-width: $mobile) {
             font-size: $title-mobile-size !important;
@@ -273,6 +276,7 @@ header {
         font-size: 3rem;
         width: 80%;
         margin: 0 auto;
+        font-family: $font-para;
 
         @media (max-width: $mobile) {
             font-size: $para-mobile-size !important;
@@ -329,6 +333,7 @@ header {
 
         .about-day-text {
             font-size: $para-size;
+            font-family: $font-para;
             @media (max-width: $mobile) {
                 font-size: 1rem;
             }
