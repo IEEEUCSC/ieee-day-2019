@@ -55,8 +55,9 @@ header .balloons img {
 
 header .man #man-1 {
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 2%;
+  height: 150px;
 }
 
 header .man #man-2 {
@@ -68,6 +69,7 @@ header .man #man-2 {
 header .man #man-3 {
   position: absolute;
   top: 20%;
+  height: 150px;
   right: 60px;
 }
 
@@ -98,7 +100,7 @@ header .man #man-3 {
   header .man #man-3 {
     position: absolute;
     width: 30% !important;
-    top: 10%;
+    top: 15%;
     right: 30px;
   }
   header .balloons {
@@ -167,17 +169,11 @@ header .man #man-3 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/img/img2.jpg);
   background-size: cover;
   background-attachment: fixed;
-  height: 80vh;
+  height: 100vh;
   font-family: "Luckiest Guy", cursive;
   color: #fff;
   z-index: 1000;
   background-position: center;
-}
-
-@media (max-width: 576px) {
-  .countdown {
-    height: 100vh;
-  }
 }
 
 .countdown .countdown-title {
