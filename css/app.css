@@ -120,14 +120,6 @@ header .man #man-3 {
   position: relative;
 }
 
-.intro .hashtag {
-  position: absolute;
-  width: 200px;
-  height: 200px;
-  right: 10%;
-  top: 0;
-}
-
 .intro .intro-title {
   text-align: center;
   text-transform: uppercase;
@@ -138,7 +130,7 @@ header .man #man-3 {
 
 @media (max-width: 576px) {
   .intro .intro-title {
-    font-size: 5rem;
+    font-size: 3rem;
     padding-bottom: 10px;
   }
 }
@@ -237,7 +229,6 @@ header .man #man-3 {
 
 .banner-1 {
   height: 100vh;
-  color: #981c81;
   font-family: "Luckiest Guy", cursive;
   text-align: center;
   display: -webkit-box;
@@ -253,6 +244,30 @@ header .man #man-3 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
+}
+
+@media (max-width: 576px) {
+  .banner-1 {
+    padding: 50px 0px;
+    height: 100%;
+  }
+}
+
+.banner-1 .hashtag {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  right: 10%;
+  top: 0;
+}
+
+@media (max-width: 576px) {
+  .banner-1 .hashtag {
+    height: 100px;
+    width: 100px;
+    right: 4%;
+  }
 }
 
 .banner-1 .banner-1-title {
@@ -304,6 +319,7 @@ header .man #man-3 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/img/img2.jpg);
   background-size: cover;
   background-attachment: fixed;
+  background-position: center;
   width: 80%;
   margin: 0 auto;
   z-index: 2;
@@ -316,8 +332,8 @@ header .man #man-3 {
         -ms-flex-direction: column;
             flex-direction: column;
     height: 50vh;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(/img/img4.jpg);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/img/img4.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(/img/img4.JPG);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/img/img4.JPG);
   }
 }
 

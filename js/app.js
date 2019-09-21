@@ -95,8 +95,8 @@ function setHeroAnimations() {
             anime({
                 targets: "#man-3",
                 rotate: {
-                    value: 180,
-                    duration: 5000
+                    value: 90,
+                    duration: 3000
                 }
                 // translateX: -250
             });
@@ -169,9 +169,9 @@ function setScrollOut() {
                 jel.addClass("animated fadeInRight delay-500ms");
             }
             if (jel.hasClass("about-day-text")) {
-                jel.removeClass("animated fadeInUp delay-500ms");
+                jel.removeClass("animated fadeInLeft delay-500ms");
                 void el.offsetWidth;
-                jel.addClass("animated fadeInUp delay-500ms");
+                jel.addClass("animated fadeInLeft delay-500ms");
             }
             if (jel.hasClass("balloons")) {
                 jel.removeClass("animated fadeInUp delay-500ms");
