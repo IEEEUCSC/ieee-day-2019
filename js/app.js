@@ -5,7 +5,8 @@ $(document).ready(function() {
     setScrollOut();
     setHeroAnimations();
     setCountdown();
-    setTimeout(function() {}, 1000);
+    toggleNavColor();
+    scrollToElements();
 });
 
 function setHeroAnimations() {
@@ -100,19 +101,10 @@ function setHeroAnimations() {
                 }
                 // translateX: -250
             });
-            // anime({
-            //   targets: "#blob path",
-            //   strokeDashoffset: [anime.setDashoffset, 0],
-            //   easing: "easeInOutSine",
-            //   duration: 1000,
-            //   fill: ["#fff", "rgb(148, 39, 167)"],
-            //   // delay: 2000,
-            //   update: function(anim) {
-            //     console.log(anim.progress);
-            //   },
-            //   direction: "alternate",
-            //   loop: false
-            // });
+            $(".hero-button").css({
+                "background-color": "#035b98",
+                color: "#fff"
+            });
         },
         direction: "alternate",
         loop: false
@@ -179,5 +171,128 @@ function setScrollOut() {
                 jel.addClass("animated fadeInUp delay-500ms");
             }
         }
+    });
+}
+
+function toggleNavColor() {
+    document.addEventListener("scroll", function() {
+        if (window.pageYOffset > 70) {
+            $("nav").addClass("sticky");
+        } else {
+            $("nav").removeClass("sticky");
+        }
+
+        if (window.pageYOffset < 500) {
+            $(".active-link").removeClass("active-link");
+            $("#home-nav").addClass("active-link");
+        }
+
+        if (window.pageYOffset > 650) {
+            $(".active-link").removeClass("active-link");
+            $("#what-nav").addClass("active-link");
+        }
+        if (window.pageYOffset > 2990) {
+            $(".active-link").removeClass("active-link");
+            $("#about-nav").addClass("active-link");
+        }
+        if (window.pageYOffset > 4100) {
+            $(".active-link").removeClass("active-link");
+            $("#sub-nav").addClass("active-link");
+        }
+
+        // console.log(window.pageYOffset);
+    });
+}
+
+function scrollToElements() {
+    $("#home-nav, #home-side-nav").click(function(e) {
+        if (
+            $(this)
+                .attr("id")
+                .includes("side")
+        ) {
+            $(".toggler").click();
+        }
+
+        $(".active").removeClass("active");
+        $("html, body").animate(
+            {
+                scrollTop: $("header").offset().top
+            },
+            1500
+        );
+        $(this).addClass("active");
+    });
+    $("#what-nav, #what-side-nav").click(function() {
+        if (
+            $(this)
+                .attr("id")
+                .includes("side")
+        ) {
+            $(".toggler").click();
+        }
+        $(".active").removeClass("active");
+        $("html, body").animate(
+            {
+                scrollTop: $(".intro").offset().top
+            },
+            1500
+        );
+        $(this).addClass("active-linkj");
+    });
+    $(".hero-button").click(function() {
+        $(".active-link").removeClass("active-link");
+        $("html, body").animate(
+            {
+                scrollTop: $(".intro").offset().top
+            },
+            1500
+        );
+        $(this).addClass("active-link");
+        // $("#what-nav").addClass("active-link");
+    });
+    $("#countdown-nav").click(function() {
+        $(".active-link").removeClass("active-link");
+        $("html, body").animate(
+            {
+                scrollTop: $(".countdown").offset().top
+            },
+            1500
+        );
+        $(this).addClass("active-link");
+    });
+    $("#about-nav, #about-side-nav").click(function() {
+        if (
+            $(this)
+                .attr("id")
+                .includes("side")
+        ) {
+            $(".toggler").click();
+        }
+        $(".active-link").removeClass("active-link");
+        $("html, body").animate(
+            {
+                scrollTop: $(".about-day").offset().top
+            },
+            1500
+        );
+        $(this).addClass("active-link");
+    });
+    $("#sub-nav, #sub-side-nav").click(function() {
+        if (
+            $(this)
+                .attr("id")
+                .includes("side")
+        ) {
+            $(".toggler").click();
+        }
+        $(".active-link").removeClass("active-link");
+        $("html, body").animate(
+            {
+                scrollTop: $(".subscribe").offset().top
+            },
+            1500
+        );
+        $(this).addClass("active-link");
     });
 }
