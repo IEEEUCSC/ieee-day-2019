@@ -346,28 +346,46 @@ header {
 
         .hero-button {
             text-align: center;
-            padding: 15px 0px;
-            color: $dark-blue;
-            font-weight: bold;
-            // background-color: $light-blue;
-            background-color: none;
-            width: 30%;
-            margin: 0 auto;
-            cursor: pointer;
-            // border-radius: 50%;
-            border: 2px solid $dark-blue;
-            margin-top: 10px;
-            transition: all ease-in 0.3s;
-
-            &:hover {
-                background-color: $dark-blue;
+            .btn-see-more,
+            .btn-register {
+                display: inline-block;
+                text-align: center;
+                padding: 15px 0px;
+                color: $dark-blue;
+                font-weight: bold;
+                // background-color: $light-blue;
+                background-color: none;
+                width: 30%;
+                margin: 0 auto;
+                cursor: pointer;
+                // border-radius: 50%;
+                border: 2px solid $dark-blue;
+                margin-top: 10px;
                 transition: all ease-in 0.3s;
-                color: #fff;
+
+                &:hover {
+                    background-color: $dark-blue;
+                    transition: all ease-in 0.3s;
+                    color: #fff;
+                    text-decoration: none;
+                }
+
+                &:active {
+                    text-decoration: none;
+                }
+
+                @media (max-width: 750px) {
+                    padding-top: 7px;
+                    padding-bottom: 7px;
+                }
             }
 
-            @media (max-width: 750px) {
-                padding-top: 7px;
-                padding-bottom: 7px;
+            .btn-register {
+                color: $light-blue;
+                border: 2px solid $light-blue;
+                &:hover {
+                    background-color: $light-blue;
+                }
             }
         }
     }
@@ -486,6 +504,10 @@ header {
         font-size: $para-size;
         font-family: $font-para;
 
+        h3 {
+            font-weight: bold;
+        }
+
         @media (max-width: $mobile) {
             font-size: 1rem;
             width: 100%;
@@ -504,6 +526,10 @@ header {
     background-size: cover;
     background-attachment: fixed;
     margin-top: 50px;
+
+    @media (max-width: $mobile) {
+        background-attachment: scroll !important;
+    }
 }
 
 // Countdown
@@ -523,6 +549,7 @@ header {
 
     @media (max-width: $mobile) {
         height: 100%;
+        background-attachment: scroll !important;
     }
 
     .countdown-title {
@@ -618,7 +645,7 @@ header {
     }
 
     .banner-1-text {
-        font-size: 3rem;
+        font-size: 2rem;
         width: 80%;
         margin: 0 auto;
         font-family: $font-para;
@@ -656,6 +683,7 @@ header {
         z-index: 2;
         @media (max-width: $mobile) {
             flex-direction: column;
+            background-attachment: scroll !important;
             height: 50vh;
             background-image: linear-gradient(
                     rgba(0, 0, 0, 0.3),
@@ -683,6 +711,7 @@ header {
         .about-day-text {
             font-size: $para-size;
             font-family: $font-para;
+            text-align: center;
             @media (max-width: $mobile) {
                 font-size: 1rem;
             }

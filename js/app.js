@@ -101,8 +101,13 @@ function setHeroAnimations() {
                 }
                 // translateX: -250
             });
-            $(".hero-button").css({
+            $(".hero-button .btn-see-more").css({
                 "background-color": "#035b98",
+                color: "#fff"
+            });
+
+            $(".hero-button .btn-register").css({
+                "background-color": "rgb(0, 152, 166)",
                 color: "#fff"
             });
         },
@@ -195,7 +200,7 @@ function toggleNavColor() {
             $(".active-link").removeClass("active-link");
             $("#about-nav").addClass("active-link");
         }
-        if (window.pageYOffset > 4100) {
+        if (window.pageYOffset > 3900) {
             $(".active-link").removeClass("active-link");
             $("#sub-nav").addClass("active-link");
         }
@@ -240,7 +245,7 @@ function scrollToElements() {
         );
         $(this).addClass("active-linkj");
     });
-    $(".hero-button").click(function() {
+    $(".hero-button .btn-see-more").click(function() {
         $(".active-link").removeClass("active-link");
         $("html, body").animate(
             {
