@@ -380,6 +380,7 @@ header {
                 @media (max-width: 750px) {
                     padding-top: 7px;
                     padding-bottom: 7px;
+                    margin: 0px;
                 }
             }
 
@@ -775,28 +776,56 @@ footer {
 // Subscription Section
 
 .subscribe {
-    padding: 200px;
-    background-color: #f2f2f2;
+    position: relative;
+    padding: 130px 0px 200px;
+    // background-color: #f2f2f2;
+    min-height: 80vh;
     margin: 20px 0px;
 
     label {
         font-family: $font-para;
-        font-size: 1.5rem !important;
+        font-size: 3.5rem !important;
     }
     #mc_embed_signup_scroll {
         input {
             width: 100%;
+            font-family: $font-para;
         }
 
         .button {
             background-color: $dark-blue;
+            font-family: $font-para;
         }
         // width: 80%;
     }
 
+    .left-bg {
+        position: absolute;
+        left: 0;
+        top: -40%;
+        height: 700px;
+    }
+
+    .right-bg {
+        position: absolute;
+        right: 0;
+        top: -40%;
+        height: 700px;
+    }
     @media (max-width: 750px) {
         padding: 200px 20px;
         margin-top: 0px;
+
+        label {
+            font-size: 2.5rem !important;
+        }
+
+        .left-bg,
+        .right-bg {
+            top: 5%;
+            height: 600px;
+            width: 150px;
+        }
     }
 }
 

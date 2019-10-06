@@ -426,6 +426,7 @@ header .hero-text .hero-button .btn-register:active {
   header .hero-text .hero-button .btn-register {
     padding-top: 7px;
     padding-bottom: 7px;
+    margin: 0px;
   }
 }
 
@@ -827,28 +828,54 @@ footer .footer-logo {
 }
 
 .subscribe {
-  padding: 200px;
-  background-color: #f2f2f2;
+  position: relative;
+  padding: 130px 0px 200px;
+  min-height: 80vh;
   margin: 20px 0px;
 }
 
 .subscribe label {
   font-family: "Raleway", sans-serif;
-  font-size: 1.5rem !important;
+  font-size: 3.5rem !important;
 }
 
 .subscribe #mc_embed_signup_scroll input {
   width: 100%;
+  font-family: "Raleway", sans-serif;
 }
 
 .subscribe #mc_embed_signup_scroll .button {
   background-color: #035b98;
+  font-family: "Raleway", sans-serif;
+}
+
+.subscribe .left-bg {
+  position: absolute;
+  left: 0;
+  top: -40%;
+  height: 700px;
+}
+
+.subscribe .right-bg {
+  position: absolute;
+  right: 0;
+  top: -40%;
+  height: 700px;
 }
 
 @media (max-width: 750px) {
   .subscribe {
     padding: 200px 20px;
     margin-top: 0px;
+  }
+  .subscribe label {
+    font-size: 2.5rem !important;
+  }
+  .subscribe .left-bg,
+  .subscribe .right-bg {
+    top: 5%;
+    height: 600px;
+    width: 150px;
   }
 }
 /*# sourceMappingURL=app.css.map */

@@ -260,6 +260,17 @@ function scrollToElements() {
         $(this).addClass("active-link");
         // $("#what-nav").addClass("active-link");
     });
+    $(".hero-button .btn-register").click(function() {
+        $(".active-link").removeClass("active-link");
+        $("html, body").animate(
+            {
+                scrollTop: $(".register").offset().top
+            },
+            1500
+        );
+        $(this).addClass("active-link");
+        // $("#what-nav").addClass("active-link");
+    });
     $("#countdown-nav").click(function() {
         $(".active-link").removeClass("active-link");
         $("html, body").animate(
