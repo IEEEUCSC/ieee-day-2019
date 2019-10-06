@@ -350,7 +350,7 @@ header {
             .btn-register {
                 display: inline-block;
                 text-align: center;
-                padding: 15px 0px;
+                padding: 13px 0px;
                 color: $dark-blue;
                 font-weight: bold;
                 // background-color: $light-blue;
@@ -359,9 +359,11 @@ header {
                 margin: 0 auto;
                 cursor: pointer;
                 // border-radius: 50%;
-                border: 2px solid $dark-blue;
-                margin-top: 10px;
+                // border: 2px solid $dark-blue;
+                margin: 20px 10px;
                 transition: all ease-in 0.3s;
+                font-family: $font-para;
+                letter-spacing: 1px;
 
                 &:hover {
                     background-color: $dark-blue;
@@ -382,9 +384,15 @@ header {
 
             .btn-register {
                 color: $light-blue;
-                border: 2px solid $light-blue;
+                // border: 2px solid $light-blue;
                 &:hover {
-                    background-color: $light-blue;
+                    // background-color: $light-blue;
+                    // background-image: linear-gradient(
+                    //     to left,
+                    //     #035b98,
+                    //     rgb(0, 152, 166)
+                    // );
+                    // transition: 0.6s ease-in;
                 }
             }
         }
@@ -724,24 +732,39 @@ header {
 // Footer
 
 footer {
-    height: 50vh;
+    height: 100%;
     text-align: center;
-    margin: auto auto;
+    // margin: auto auto;
     background-color: $light-blue;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    // display: flex;
+    // align-items: center;
+    // justify-content: space-between;
     // color: $dark-blue;
+    // color: $light-blue;
     color: #fff;
     font-family: $font-para;
     letter-spacing: 2px;
+    flex-direction: column;
+    padding-bottom: 20px;
     // font-weight: bold;
 
     .footer-main-title {
         font-size: $title-size;
 
         @media (max-width: $mobile) {
-            font-size: $title-mobile-size;
+            font-size: $title-mobile-size - 1;
+            width: 80%;
+            margin: 0 auto;
+            padding: 10px 0px;
+        }
+    }
+
+    .footer-logo {
+        // width: 700px;
+        height: 150px;
+
+        @media (max-width: $mobile) {
+            height: 100px;
         }
     }
 }

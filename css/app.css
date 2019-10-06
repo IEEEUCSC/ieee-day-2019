@@ -392,17 +392,18 @@ header .hero-text .hero-button .btn-see-more,
 header .hero-text .hero-button .btn-register {
   display: inline-block;
   text-align: center;
-  padding: 15px 0px;
+  padding: 13px 0px;
   color: #035b98;
   font-weight: bold;
   background-color: none;
   width: 30%;
   margin: 0 auto;
   cursor: pointer;
-  border: 2px solid #035b98;
-  margin-top: 10px;
+  margin: 20px 10px;
   -webkit-transition: all ease-in 0.3s;
   transition: all ease-in 0.3s;
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 1px;
 }
 
 header .hero-text .hero-button .btn-see-more:hover,
@@ -429,11 +430,6 @@ header .hero-text .hero-button .btn-register:active {
 
 header .hero-text .hero-button .btn-register {
   color: #0098a6;
-  border: 2px solid #0098a6;
-}
-
-header .hero-text .hero-button .btn-register:hover {
-  background-color: #0098a6;
 }
 
 header .balloons {
@@ -788,22 +784,17 @@ header .man #man-3 {
 }
 
 footer {
-  height: 50vh;
+  height: 100%;
   text-align: center;
-  margin: auto auto;
   background-color: #0098a6;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   color: #fff;
   font-family: "Raleway", sans-serif;
   letter-spacing: 2px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-bottom: 20px;
 }
 
 footer .footer-main-title {
@@ -812,7 +803,20 @@ footer .footer-main-title {
 
 @media (max-width: 1100px) {
   footer .footer-main-title {
-    font-size: 3rem;
+    font-size: 2rem;
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px 0px;
+  }
+}
+
+footer .footer-logo {
+  height: 150px;
+}
+
+@media (max-width: 1100px) {
+  footer .footer-logo {
+    height: 100px;
   }
 }
 

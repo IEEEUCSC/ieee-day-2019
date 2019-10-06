@@ -102,12 +102,16 @@ function setHeroAnimations() {
                 // translateX: -250
             });
             $(".hero-button .btn-see-more").css({
-                "background-color": "#035b98",
+                // "background-color": "#035b98",
+                "background-image":
+                    "linear-gradient(to left, #035b98, rgb(0,152, 166))",
                 color: "#fff"
             });
 
             $(".hero-button .btn-register").css({
-                "background-color": "rgb(0, 152, 166)",
+                // "background-color": "rgb(0, 152, 166)",
+                "background-image":
+                    "linear-gradient(to right, #fff, rgb(0,152, 166))",
                 color: "#fff"
             });
         },
