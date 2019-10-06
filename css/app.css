@@ -395,15 +395,16 @@ header .hero-text .hero-button .btn-register {
   padding: 13px 0px;
   color: #035b98;
   font-weight: bold;
-  background-color: none;
   width: 30%;
   margin: 0 auto;
   cursor: pointer;
+  border: 2px solid #035b98;
   margin: 20px 10px;
   -webkit-transition: all ease-in 0.3s;
   transition: all ease-in 0.3s;
   font-family: "Raleway", sans-serif;
   letter-spacing: 1px;
+  border-radius: 50px;
 }
 
 header .hero-text .hero-button .btn-see-more:hover,
@@ -430,6 +431,11 @@ header .hero-text .hero-button .btn-register:active {
 
 header .hero-text .hero-button .btn-register {
   color: #0098a6;
+  border: 2px solid #0098a6;
+}
+
+header .hero-text .hero-button .btn-register:hover {
+  background-color: #0098a6;
 }
 
 header .balloons {

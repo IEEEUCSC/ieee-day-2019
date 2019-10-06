@@ -354,16 +354,17 @@ header {
                 color: $dark-blue;
                 font-weight: bold;
                 // background-color: $light-blue;
-                background-color: none;
+                // background-color: none;
                 width: 30%;
                 margin: 0 auto;
                 cursor: pointer;
                 // border-radius: 50%;
-                // border: 2px solid $dark-blue;
+                border: 2px solid $dark-blue;
                 margin: 20px 10px;
                 transition: all ease-in 0.3s;
                 font-family: $font-para;
                 letter-spacing: 1px;
+                border-radius: 50px;
 
                 &:hover {
                     background-color: $dark-blue;
@@ -384,9 +385,9 @@ header {
 
             .btn-register {
                 color: $light-blue;
-                // border: 2px solid $light-blue;
+                border: 2px solid $light-blue;
                 &:hover {
-                    // background-color: $light-blue;
+                    background-color: $light-blue;
                     // background-image: linear-gradient(
                     //     to left,
                     //     #035b98,
