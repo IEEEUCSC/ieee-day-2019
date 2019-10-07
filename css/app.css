@@ -427,6 +427,7 @@ header .hero-text .hero-button .btn-register:active {
     padding-top: 7px;
     padding-bottom: 7px;
     margin: 0px;
+    font-size: 0.8rem;
   }
 }
 
@@ -557,8 +558,8 @@ header .man #man-3 {
   height: 50vh;
   width: 80%;
   margin: 0 auto;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(/img/img1.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/img/img1.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(/img/bg-2018.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/img/bg-2018.jpg);
   background-size: cover;
   background-attachment: fixed;
   margin-top: 50px;
@@ -567,12 +568,13 @@ header .man #man-3 {
 @media (max-width: 1100px) {
   .imagebar-2 {
     background-attachment: scroll !important;
+    background-position: center;
   }
 }
 
 .countdown {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(/img/img2.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/img/img2.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(/img/bg-2016.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/img/bg-2016.jpg);
   background-size: cover;
   background-attachment: fixed;
   height: 100vh;
@@ -732,8 +734,8 @@ header .man #man-3 {
 }
 
 .about-day .about-day-img {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(/img/img2.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/img/img2.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(/img/bg-2016.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/img/bg-2016.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -750,8 +752,8 @@ header .man #man-3 {
             flex-direction: column;
     background-attachment: scroll !important;
     height: 50vh;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(/img/img4.JPG);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/img/img4.JPG);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(/img/bg-2016.JPG);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/img/bg-2016.JPG);
   }
 }
 
@@ -805,7 +807,7 @@ footer {
 }
 
 footer .footer-main-title {
-  font-size: 5rem;
+  font-size: 3rem;
 }
 
 @media (max-width: 1100px) {
