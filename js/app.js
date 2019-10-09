@@ -136,10 +136,10 @@ function setCountdown() {
         );
         var mins = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
         var secs = Math.floor((distance % (1000 * 60)) / 1000);
-        daysEl.innerText = days + " days";
-        hoursEl.innerText = hours + " hours";
-        minsEl.innerText = mins + " mins";
-        secsEl.innerText = secs + " secs";
+        daysEl.innerText = days;
+        hoursEl.innerText = hours;
+        minsEl.innerText = mins;
+        secsEl.innerText = secs;
     }, 1000);
 }
 

@@ -525,6 +525,7 @@ header .man #man-3 {
   font-weight: bold;
   font-size: 5rem;
   letter-spacing: 5px;
+  padding-bottom: 0px;
 }
 
 @media (max-width: 1100px) {
@@ -543,8 +544,9 @@ header .man #man-3 {
   font-family: "Raleway", sans-serif;
 }
 
-.intro .intro-text h3 {
+.intro .intro-text h2 {
   font-weight: bold;
+  padding: 20px;
 }
 
 @media (max-width: 1100px) {
@@ -597,6 +599,7 @@ header .man #man-3 {
   padding: 50px;
   font-size: 5rem;
   font-family: "Raleway", sans-serif;
+  font-weight: bold;
   letter-spacing: 2px;
 }
 
@@ -619,7 +622,6 @@ header .man #man-3 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  font-size: 5rem;
   font-family: "Raleway", sans-serif;
   font-weight: bold;
 }
@@ -634,14 +636,39 @@ header .man #man-3 {
   }
 }
 
+.countdown .countdown-items .cover {
+  padding: 55px;
+  margin: 10px;
+  background-color: #0098a6;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 1100px) {
+  .countdown .countdown-items .cover {
+    font-size: 1rem;
+    padding-bottom: 0px;
+    padding-top: 0px;
+  }
+}
+
 .countdown .countdown-items #days,
 .countdown .countdown-items #mins,
 .countdown .countdown-items #hours,
 .countdown .countdown-items #secs {
-  padding: 25px;
-  margin: 10px;
-  background-color: #0098a6;
-  border-radius: 50px;
+  font-size: 5rem;
+}
+
+@media (max-width: 1100px) {
+  .countdown .countdown-items #days,
+  .countdown .countdown-items #mins,
+  .countdown .countdown-items #hours,
+  .countdown .countdown-items #secs {
+    font-size: 3rem;
+  }
 }
 
 .banner-1 {
@@ -720,7 +747,6 @@ header .man #man-3 {
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  padding: 20px;
   font-family: "Raleway", sans-serif;
 }
 
@@ -734,26 +760,12 @@ header .man #man-3 {
 }
 
 .about-day .about-day-img {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(/img/bg-2016.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/img/bg-2016.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  width: 80%;
-  margin: 0 auto;
-  z-index: 2;
+  position: absolute;
 }
 
 @media (max-width: 1100px) {
   .about-day .about-day-img {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    background-attachment: scroll !important;
-    height: 50vh;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(/img/bg-2016.jpg);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/img/bg-2016.jpg);
+    height: 300px;
   }
 }
 
@@ -772,6 +784,8 @@ header .man #man-3 {
   font-size: 5rem;
   text-align: center;
   letter-spacing: 2px;
+  padding: 10px 0px;
+  font-weight: bold;
 }
 
 @media (max-width: 1100px) {
@@ -820,7 +834,7 @@ footer .footer-main-title {
 }
 
 footer .footer-logo {
-  height: 150px;
+  height: 250px;
 }
 
 @media (max-width: 1100px) {
